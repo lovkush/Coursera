@@ -13,14 +13,13 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishDetailsComponent } from './dish-details/dish-details.component';
-import { DishCommentsComponent } from './dish-comments/dish-comments.component';
+import { DishService } from './services/dish.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishDetailsComponent,
-    DishCommentsComponent
+    DishDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +31,7 @@ import { DishCommentsComponent } from './dish-comments/dish-comments.component';
     MatButtonModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [ DishService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

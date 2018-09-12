@@ -31,8 +31,8 @@
     <div class="container"
       fxLayout="column"
       fxLayoutGap="0px">
-      <h1>Comments</h1>
-        <mat-list fxFlex>
+        <mat-list fxFlex *ngIf="dish">
+          <h1>Comments</h1>
           <mat-list-item *ngFor="let comment of dish.comments">
             <p matLine>
               <span> {{comment.comment}} </span>
