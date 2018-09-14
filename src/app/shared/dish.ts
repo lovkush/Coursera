@@ -5,5 +5,6 @@
 	category : string;
 	price: string;
 	label : string; 
-	comments : comments[];
+	description : string;
+	comments : Comment[];
 }

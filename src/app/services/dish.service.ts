@@ -12,7 +12,7 @@ export class DishService {
   	
   	}
   
-    getDishes() :Dish[]{
+    getDishes() : Dish[]{
   		return DISHES;
   
   }
