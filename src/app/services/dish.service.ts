@@ -5,17 +5,24 @@ import { DISHES } from '../shared/dishes';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class DishService {
 
   constructor() { 
-
-  	
-  	}
-  
-    getDishes() : Dish[]{
-  		return DISHES;
-  
+    }
+    
+  getDish(id: number): Dish {
+    return DISHES.filter((dish) => (dish.id === id))[0];
   }
 
+  getDishes() : Dish[] {
+    return DISHES ;
+  }
 
-}
+  getFeaturedDish(): Dish {
+    return DISHES.filter((dish) => dish.featured)[0];
+  }
+  
+ }
+
