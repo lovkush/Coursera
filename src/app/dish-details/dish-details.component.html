@@ -1,12 +1,11 @@
 <div class="container"
-    fxLayout="column"
-    fxLayout.sm="row"
-    fxLayout.xs="row"
+    fxLayout="row"
+    fxLayout.xs="column"
     fxLayoutAlign.gt-md="space-around center"
     fxLayoutGap="10px" 
     fxLayoutGap.xs="0">
 
-  <div fxFlex="50">
+  <div fxFlex="45">
     <div fxFlex *ngIf="dish">
     <mat-card>
       <mat-card-header>
@@ -28,7 +27,7 @@
   </div>
   </div>
 
-  <div fxFlex="50">
+  <div fxFlex="45">
     <div class="container"
       fxLayout="column"
       fxLayoutGap="0px">
